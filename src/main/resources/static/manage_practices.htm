@@ -15,15 +15,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
-  function drillSelf( cat, val) {
+  function newPractice( cat, val) {
 	  //alert(cat + ":" + val);
-	  window.location.href = "profile_detail.htm";
+	  window.location.href = "new_practice.htm";
   }
 </script>
 <div id="containerHeader" class="row">     
     <div class="span12">         
-        <h1>Company Logo</h1>         
-         
+          <h2><img src="./graphics/infinity_logo1.jpg"/></h2>                 
     </div> 
 </div>
   
@@ -55,20 +54,22 @@
   </table>
 </div>
 
-<div id="container2" style="min-width: 310px; max-width: 800px; height: 100px; margin: 0 auto">
+<div id="container2" style="border: 1px solid; min-width: 310px; max-width: 800px; height: 100px; margin: 0 auto">
 	<p>
 		<h4>Graphical Representation</h4>
 		<div>
-	       ??? 45% ??
+	       [TBD] Not sure what to display here.
 		</div>
 	</p>
 </div>
-<div id="container3" style="min-width: 310px; max-width: 800px; height: 200px; margin: 0 auto">
+ 
+<div id="container3" style="min-width: 310px; max-width: 800px; height: 20px; margin: 0 auto">
 
 </div>
+  
 <div id="action" style="min-width: 310px; max-width: 800px; height: 100px; margin: 0 auto">
-  <button onclick='alert("New Practice")'>New Practice</button>
-  <button onclick='alert("View Reflection")'>View Reflection</button>
+  <button onclick='newPractice()' type="button" class="btn btn-primary">New Practice</button>
+  <button onclick='alert("View Reflection")' type="button" class="btn btn-primary">View Reflection</button>
 </div>
 
 
